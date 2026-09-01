@@ -1,0 +1,632 @@
+# ============================================================
+# qianlink家宽云 Clash/Mihomo 配置模板 (由节点公开信息生成)
+# 协议: hysteria2 (本站全部节点均为 hysteria2, 无 vmess/vless/trojan/ss)
+# 注意: password 为占位符, 请用 Get-QianlinkConfig.ps1 拉取你的专属订阅
+# ============================================================
+
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+unified-delay: true
+tcp-concurrent: true
+
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  fallback:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+
+proxies:
+  - name: "香港（机房） X1"
+    type: hysteria2
+    server: 206.237.17.218
+    port: 34444
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "香港WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32120
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "台湾（机房）"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32122
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "新加坡（机房）"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32081
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "新加坡（原生2）X2"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32116
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "新加坡（家庭）X3"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32085
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "日本（广播家庭）"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32089
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "马来WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32119
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "菲律宾（家庭）X1.5"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32080
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "菲律宾WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32096
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "美国（机房）X0.5"
+    type: hysteria2
+    server: 161.114.12.56
+    port: 443
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "美国（家庭）X3"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32086
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "美国（家庭2）X3"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32084
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "美国WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32114
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "英国（家庭）X2"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32093
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "英国WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32094
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "英国WiFicall（机房）X10"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32124
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "新西兰WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32121
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "新西兰WiFicall（机房）X10"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32123
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "新西兰WiFicall（机房2）X10"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32125
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "韩国（家庭）X1.5"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32103
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "法国（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32115
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "希腊（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32102
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "越南WiFicall（机房）X10"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32126
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "越南WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32130
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "印度WiFicall（动态家宽）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32095
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "新加坡 WiFiCall 动态家庭 X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32118
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "奥地利WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32127
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "尼日利亚WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32097
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "广东（动态家庭）"
+    type: hysteria2
+    server: zhizhi0820.cn
+    port: 32080
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "加拿大WiFicall(动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32128
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "斯里兰卡WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32129
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "柬埔寨WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32132
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "澳大利亚WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32131
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "巴基斯坦WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32133
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "印尼WiFicall（动态家庭）X30"
+    type: hysteria2
+    server: vpn.qianlink.link
+    port: 32134
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "马来西亚（动态家庭）X2"
+    type: hysteria2
+    server: 206.237.17.218
+    port: 35001
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+  - name: "德国"
+    type: hysteria2
+    server: 212.17.238.40
+    port: 443
+    password: "填入你的订阅密码"
+    up: 50
+    down: 500
+    sni: vpn.qianlink.link
+    skip-cert-verify: true
+
+proxy-groups:
+- name: "🚀 手动选择"
+  type: select
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - "香港（机房） X1"
+    - "香港WiFicall（动态家庭）X30"
+    - "台湾（机房）"
+    - "新加坡（机房）"
+    - "新加坡（原生2）X2"
+    - "新加坡（家庭）X3"
+    - "日本（广播家庭）"
+    - "马来WiFicall（动态家庭）X30"
+    - "菲律宾（家庭）X1.5"
+    - "菲律宾WiFicall（动态家庭）X30"
+    - "美国（机房）X0.5"
+    - "美国（家庭）X3"
+    - "美国（家庭2）X3"
+    - "美国WiFicall（动态家庭）X30"
+    - "英国（家庭）X2"
+    - "英国WiFicall（动态家庭）X30"
+    - "英国WiFicall（机房）X10"
+    - "新西兰WiFicall（动态家庭）X30"
+    - "新西兰WiFicall（机房）X10"
+    - "新西兰WiFicall（机房2）X10"
+    - "韩国（家庭）X1.5"
+    - "法国（动态家庭）X30"
+    - "希腊（动态家庭）X30"
+    - "越南WiFicall（机房）X10"
+    - "越南WiFicall（动态家庭）X30"
+    - "印度WiFicall（动态家宽）X30"
+    - "新加坡 WiFiCall 动态家庭 X30"
+    - "奥地利WiFicall（动态家庭）X30"
+    - "尼日利亚WiFicall（动态家庭）X30"
+    - "广东（动态家庭）"
+    - "加拿大WiFicall(动态家庭）X30"
+    - "斯里兰卡WiFicall（动态家庭）X30"
+    - "柬埔寨WiFicall（动态家庭）X30"
+    - "澳大利亚WiFicall（动态家庭）X30"
+    - "巴基斯坦WiFicall（动态家庭）X30"
+    - "印尼WiFicall（动态家庭）X30"
+    - "马来西亚（动态家庭）X2"
+    - "德国"
+- name: "♻️ 自动选择"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - "香港（机房） X1"
+    - "香港WiFicall（动态家庭）X30"
+    - "台湾（机房）"
+    - "新加坡（机房）"
+    - "新加坡（原生2）X2"
+    - "新加坡（家庭）X3"
+    - "日本（广播家庭）"
+    - "马来WiFicall（动态家庭）X30"
+    - "菲律宾（家庭）X1.5"
+    - "菲律宾WiFicall（动态家庭）X30"
+    - "美国（机房）X0.5"
+    - "美国（家庭）X3"
+    - "美国（家庭2）X3"
+    - "美国WiFicall（动态家庭）X30"
+    - "英国（家庭）X2"
+    - "英国WiFicall（动态家庭）X30"
+    - "英国WiFicall（机房）X10"
+    - "新西兰WiFicall（动态家庭）X30"
+    - "新西兰WiFicall（机房）X10"
+    - "新西兰WiFicall（机房2）X10"
+    - "韩国（家庭）X1.5"
+    - "法国（动态家庭）X30"
+    - "希腊（动态家庭）X30"
+    - "越南WiFicall（机房）X10"
+    - "越南WiFicall（动态家庭）X30"
+    - "印度WiFicall（动态家宽）X30"
+    - "新加坡 WiFiCall 动态家庭 X30"
+    - "奥地利WiFicall（动态家庭）X30"
+    - "尼日利亚WiFicall（动态家庭）X30"
+    - "广东（动态家庭）"
+    - "加拿大WiFicall(动态家庭）X30"
+    - "斯里兰卡WiFicall（动态家庭）X30"
+    - "柬埔寨WiFicall（动态家庭）X30"
+    - "澳大利亚WiFicall（动态家庭）X30"
+    - "巴基斯坦WiFicall（动态家庭）X30"
+    - "印尼WiFicall（动态家庭）X30"
+    - "马来西亚（动态家庭）X2"
+    - "德国"
+- name: "🔯 故障转移"
+  type: fallback
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - "香港（机房） X1"
+    - "香港WiFicall（动态家庭）X30"
+    - "台湾（机房）"
+    - "新加坡（机房）"
+    - "新加坡（原生2）X2"
+    - "新加坡（家庭）X3"
+    - "日本（广播家庭）"
+    - "马来WiFicall（动态家庭）X30"
+    - "菲律宾（家庭）X1.5"
+    - "菲律宾WiFicall（动态家庭）X30"
+    - "美国（机房）X0.5"
+    - "美国（家庭）X3"
+    - "美国（家庭2）X3"
+    - "美国WiFicall（动态家庭）X30"
+    - "英国（家庭）X2"
+    - "英国WiFicall（动态家庭）X30"
+    - "英国WiFicall（机房）X10"
+    - "新西兰WiFicall（动态家庭）X30"
+    - "新西兰WiFicall（机房）X10"
+    - "新西兰WiFicall（机房2）X10"
+    - "韩国（家庭）X1.5"
+    - "法国（动态家庭）X30"
+    - "希腊（动态家庭）X30"
+    - "越南WiFicall（机房）X10"
+    - "越南WiFicall（动态家庭）X30"
+    - "印度WiFicall（动态家宽）X30"
+    - "新加坡 WiFiCall 动态家庭 X30"
+    - "奥地利WiFicall（动态家庭）X30"
+    - "尼日利亚WiFicall（动态家庭）X30"
+    - "广东（动态家庭）"
+    - "加拿大WiFicall(动态家庭）X30"
+    - "斯里兰卡WiFicall（动态家庭）X30"
+    - "柬埔寨WiFicall（动态家庭）X30"
+    - "澳大利亚WiFicall（动态家庭）X30"
+    - "巴基斯坦WiFicall（动态家庭）X30"
+    - "印尼WiFicall（动态家庭）X30"
+    - "马来西亚（动态家庭）X2"
+    - "德国"
+- name: "香港"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - "香港（机房） X1"
+    - "香港WiFicall（动态家庭）X30"
+- name: "台湾"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - "台湾（机房）"
+- name: "日本"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - "日本（广播家庭）"
+- name: "新加坡"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - "新加坡（机房）"
+    - "新加坡（原生2）X2"
+    - "新加坡（家庭）X3"
+    - "新加坡 WiFiCall 动态家庭 X30"
+- name: "美国"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - "美国（机房）X0.5"
+    - "美国（家庭）X3"
+    - "美国（家庭2）X3"
+    - "美国WiFicall（动态家庭）X30"
+- name: "韩国"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - "韩国（家庭）X1.5"
+- name: "英国"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - "英国（家庭）X2"
+    - "英国WiFicall（动态家庭）X30"
+    - "英国WiFicall（机房）X10"
+- name: "欧洲/大洋洲"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - "新西兰WiFicall（动态家庭）X30"
+    - "新西兰WiFicall（机房）X10"
+    - "新西兰WiFicall（机房2）X10"
+    - "法国（动态家庭）X30"
+    - "希腊（动态家庭）X30"
+    - "奥地利WiFicall（动态家庭）X30"
+    - "德国"
+- name: "亚太/美洲其他"
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - "马来WiFicall（动态家庭）X30"
+    - "菲律宾（家庭）X1.5"
+    - "菲律宾WiFicall（动态家庭）X30"
+    - "越南WiFicall（机房）X10"
+    - "越南WiFicall（动态家庭）X30"
+    - "印度WiFicall（动态家宽）X30"
+    - "尼日利亚WiFicall（动态家庭）X30"
+    - "广东（动态家庭）"
+    - "加拿大WiFicall(动态家庭）X30"
+    - "斯里兰卡WiFicall（动态家庭）X30"
+    - "柬埔寨WiFicall（动态家庭）X30"
+    - "澳大利亚WiFicall（动态家庭）X30"
+    - "巴基斯坦WiFicall（动态家庭）X30"
+    - "印尼WiFicall（动态家庭）X30"
+    - "马来西亚（动态家庭）X2"
+- name: "🏠 家庭宽带"
+  type: select
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - "香港WiFicall（动态家庭）X30"
+    - "新加坡（家庭）X3"
+    - "日本（广播家庭）"
+    - "马来WiFicall（动态家庭）X30"
+    - "菲律宾（家庭）X1.5"
+    - "菲律宾WiFicall（动态家庭）X30"
+    - "美国（家庭）X3"
+    - "美国（家庭2）X3"
+    - "美国WiFicall（动态家庭）X30"
+    - "英国（家庭）X2"
+    - "英国WiFicall（动态家庭）X30"
+    - "英国WiFicall（机房）X10"
+    - "新西兰WiFicall（动态家庭）X30"
+    - "新西兰WiFicall（机房）X10"
+    - "新西兰WiFicall（机房2）X10"
+    - "韩国（家庭）X1.5"
+    - "法国（动态家庭）X30"
+    - "希腊（动态家庭）X30"
+    - "越南WiFicall（机房）X10"
+    - "越南WiFicall（动态家庭）X30"
+    - "印度WiFicall（动态家宽）X30"
+    - "新加坡 WiFiCall 动态家庭 X30"
+    - "奥地利WiFicall（动态家庭）X30"
+    - "尼日利亚WiFicall（动态家庭）X30"
+    - "广东（动态家庭）"
+    - "加拿大WiFicall(动态家庭）X30"
+    - "斯里兰卡WiFicall（动态家庭）X30"
+    - "柬埔寨WiFicall（动态家庭）X30"
+    - "澳大利亚WiFicall（动态家庭）X30"
+    - "巴基斯坦WiFicall（动态家庭）X30"
+    - "印尼WiFicall（动态家庭）X30"
+    - "马来西亚（动态家庭）X2"
+
+rules:
+  - DOMAIN-SUFFIX,qianlink.link,DIRECT
+  - DOMAIN-SUFFIX,telegram.org,♻️ 自动选择
+  - DOMAIN-KEYWORD,telegram,♻️ 自动选择
+  - DOMAIN-SUFFIX,t.me,♻️ 自动选择
+  - DOMAIN-SUFFIX,google.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,github.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,openai.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,youtube.com,♻️ 自动选择
+  - DOMAIN-SUFFIX,netflix.com,♻️ 自动选择
+  - GEOIP,LAN,DIRECT,no-resolve
+  - GEOIP,CN,DIRECT
+  - MATCH,♻️ 自动选择
